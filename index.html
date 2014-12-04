@@ -1,0 +1,522 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+
+    <title>Reto</title>
+
+<!--Llamadas a las librerias JS de jQuery, jQuery Mobile y a su hoja de estilos CSS -->
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css"
+	href="css/jquery.mobile.flatui.css" />
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+
+
+<link rel="stylesheet" href="css/responsiveslides.css" />
+
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+
+<script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+
+      // Slideshow 1
+      $("#slider1").responsiveSlides({
+        maxwidth: 800,
+        speed: 800
+
+    });
+    };
+  </script>
+
+</head>
+
+
+<body>
+
+
+
+	<!-- PORTADA -->
+	<div data-role="page" id="portada">
+		<!-- PANEL LATERAL -->
+
+		<div data-role="panel" id="panel2" data-position="left"
+			data-theme="a" data-display="push"
+			class="ui-panel ui-panel-position-right 
+			ui-panel-display-push ui-body-a ui-panel-animate ui-panel-open">
+
+			<div data-role="header">
+
+
+				<h1>Menu Lateral</h1>
+				<a href="#" data-role="button" data-icon="flat-checkround"
+					data-iconpos="notext" data-theme="a" data-inline="true"
+					class="ui-link ui-btn ui-btn-b ui-icon-flat-checkround ui-btn-icon-notext ui-btn-inline ui-shadow ui-corner-all"
+					role="button">Checkround</a>
+
+			</div>
+			<!-- //////////////////////////// -->
+
+			<div>
+
+				<!--Declaramos un filtro de búsqueda en la lista-->
+				<ul data-role="listview" data-theme="b">
+
+					 <a href="#galeria" data-role="button" data-inline="false" data-theme="b">Sensibilizacion</a> <!-- /content --> 
+                    <a href="#comprar" data-role="button" data-inline="false" data-theme="b">Guia</a>
+                    <a href="#denuncia" data-role="button" data-inline="false" data-theme="b">Denuncia </a>
+					<li data-role="list-divider">About
+						<ul>
+							<li data-theme="c" type="disc"><font size="2">App
+									Version 1.0</font></li>
+							<li data-theme="c" type="disc"><font size="2">2014</font></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<!-- /////////////////////		 -->
+		</div>
+		<!-- /PANEL LATERAL -->
+
+
+		<div data-role="header">
+
+
+			<h1 data-theme="b">Reto</h1>
+			
+                        <a data-iconpos="notext" href="#panel2"
+				data-role="button" data-icon="gear"></a>
+
+
+
+		</div>
+
+		<dv data-role="content"> <img src="images/logo.jpg" /> 
+                   
+                    
+		<ul class="rslides" id="slider">
+
+			<li><img src="images/principal1.png" alt="One" /></li>
+			<li><img src="images/2.png" alt="Two" /></li>
+			<li><img src="images/3.png" alt="Three" /></li>
+			<li><img src="images/4.png" alt="Four" /></li>
+		</ul>
+
+
+		<a href="#contactos" data-role="button" data-inline="false"
+			data-theme="b">Contactos</a>
+
+
+		<table align="center">
+			<tr>
+				<td align="center"><a
+					href="http//:www.facebook.com/consulynarutarls" target="new"><img
+						width=60% src="images/facebook.png"></a></td>
+				<td align="center"><a
+					href="http//:www.twiiter.com/consulynarutarls" target="new"><img
+						width=50% src="images/twitter.png"></a</td>
+				<td align="center"><a
+					href="https://plus.google.com/u/0/114527994858601340967/about
+					"
+					target="new"><img width=90% src="images/google-plus.png"></a</td>
+				<td align="center"><a
+					href="https://www.youtube.com/channel/UCWaFWcQZHTys1f-MkqpcAAg"
+					target="new"><img width=55% src="images/youtube.png"></a</td>
+		</table>
+		</tr>
+		<div data-role="footer" align="center">Pie de Pagina</div>
+	</div>
+
+
+
+	<!-- /PORTADA -->
+
+	<!-- SIgnup-->
+
+	<div data-role="page" id="signup">
+		<div data-role="header">
+		<h1 data-theme="b">Reto</h1>
+		<a href="#portada" data-role="button" data-icon="home"
+			data-iconpos="notext" data-theme="b" data-iconpos="left"
+			data-inline="true">Inicio</a> <a data-iconpos="notext" href="#panel2"
+			data-role="button" data-icon="gear"></a>
+
+		<div>
+			<img src="logo.png" />
+		</div>
+		<div data-role="content">
+			<div id="register" class="animate form">
+				<form action="mysuperscript.php" autocomplete="on">
+					<h1>Sign up</h1>
+					<p>
+						<label for="usernamesignup" class="uname" data-icon="u">
+							Username</label> <input id="usernamesignup" name="usernamesignup"
+							required="required" type="text" placeholder="mysuperusername690" />
+					</p>
+					<p>
+						<label for="emailsignup" class="youmail" data-icon="e">
+							Email</label> <input id="emailsignup" name="emailsignup"
+							required="required" type="email"
+							placeholder="mysupermail@mail.com" />
+					</p>
+					<p>
+						<label for="passwordsignup" class="youpasswd" data-icon="p">Password
+						</label> <input id="passwordsignup" name="passwordsignup"
+							required="required" type="password" placeholder="eg. X8df!90EO" />
+					</p>
+					<p>
+						<label for="passwordsignup_confirm" class="youpasswd"
+							data-icon="p">Por favor confirme su password </label> <input
+							id="passwordsignup_confirm" name="passwordsignup_confirm"
+							required="required" type="password" placeholder="eg. X8df!90EO" />
+					</p>
+					<p class="signin button">
+						<input type="submit" value="Sign up" />
+					</p>
+					<p class="change_link">
+						Ya es usuario ? <a href="#portada"> Log in </a>
+					</p>
+				</form>
+
+			</div>
+
+
+			<div data-role="footer" align="center">Calidad de Vida</div>
+		</div>
+	</div>
+	<!-- /Loggin-->
+
+	<!-- GALERIA -->
+
+	<div data-role="page" data-theme="a" id="galeria"
+		data-title="Galería de Productos">
+
+		<!-- PANEL LATERAL -->
+
+		<div data-role="panel" id="panel" data-position="right" data-theme="a"
+			data-display="push"
+			class="ui-panel ui-panel-position-right 
+			ui-panel-display-push ui-body-a ui-panel-animate ui-panel-open">
+
+			<div data-role="header">
+
+				<!-- CARRITO -->
+				<h1>Carrito</h1>
+				<a href="#" data-role="button" data-icon="flat-checkround"
+					data-iconpos="notext" data-theme="a" data-inline="true"
+					class="ui-link ui-btn ui-btn-b ui-icon-flat-checkround ui-btn-icon-notext ui-btn-inline ui-shadow ui-corner-all"
+					role="button">Checkround</a>
+
+			</div>
+			<div data-role="content" role="main" class="ui-content"
+				url="demo-page" data-theme="b">
+
+				<ul data-role="listview" data-filter="false">
+
+					<!-- Productos Por A -->
+					<li data-role="list-divider" data-theme="a">Items <span
+						class="ui-li-count">2</span>
+					</li>
+					<li><img src="images/aceite.png" class="ui-li-icon">Aceite</a></li>
+					<li>Aceite Corporal<!--Elementos de lista con imágenes--> <img
+						src="images/aceite-corporal.jpg" />
+						<h3>Aceite Corporal Circulatorio</h3> <!--Descripciones de items-->
+						<p>Cantidad : 2</p>
+						<p>Precio : 90.000</p> </a></li>
+
+					<li>
+						<!--Elementos de lista con iconos--> <img
+						src="images/infusion.png" class="ui-li-icon"> Te </a>
+					</li>
+
+					<li>Te herbal Concentrado<!--Elementos de lista con imágenes-->
+						<img src="images/te_conc_base_hierbas.png" />
+						<h3>Herbal Tea Concentrate</h3> <!--Descripciones de items-->
+						<p>Cantidad : 1</p>
+						<p>Precio : 180.000</p> </a></li>
+					<li data-role="list-divider" data-theme="b">SubTotal : $
+						90.000 + $ 180.000</li>
+					<li data-role="list-divider" data-theme="b">Envio : Gratis</li>
+					<li data-role="list-divider" data-theme="a">Total: $ 270.000</li>
+					<a href="carrito.html" data-role="button" data-inline="false"
+						data-theme="b" width=100%>Pagar</a>
+
+					<img src="images/portada.png" />
+			</div>
+			<div data-role="footer" align="center">Calidad de Vida</div>
+		</div>
+		<!-- /PANEL LATERAL -->
+
+		<div data-role="header">
+
+
+			<h1 data-theme="b">Galeria de Productos</h1>
+			<a href="#portada" data-role="button" data-icon="home"
+				data-iconpos="notext" data-theme="b" data-iconpos="left"
+				data-inline="true">Inicio</a> <a data-iconpos="notext" href="#panel"
+				data-role="button" data-icon="flat-menu"></a>
+
+		</div>
+		<div data-role="content" role="main" class="ui-content"
+			url="demo-page" data-theme="b">
+
+
+			<!--Declaramos un filtro de búsqueda en la lista-->
+			<ul data-role="listview" data-filter="true">
+				<!--Agrupaciones por orden alfabético-->
+				<!-- Productos Por A -->
+				<li data-role="list-divider" data-theme="a">A <span
+					class="ui-li-count">2</span>
+				</li>
+				<li><img src="images/aceite.png" class="ui-li-icon">Aceites</a></li>
+				<li><a href="productos/aceitecorporal.html" class="cars">
+						Aceite Corporal<!--Elementos de lista con imágenes--> <img
+						src="images/aceite-corporal.jpg" />
+						<h3>Aceite Corporal Circulatorio</h3> <!--Descripciones de items-->
+						<p>Plantas nativasl 100ml</p>
+						<p>Estimula la circulación, proporcionando instantáneamente
+							descanso y descongestión de las piernas cansadas e hinchadas con
+							mala circulación, Varices y Retención de líquido.</p>
+				</a></li>
+				<li><img src="images/fire.svg" class="ui-li-icon">Afrodisiaco</a></li>
+				<li><a href="productos/afrodisiaco.html" class="cars">
+						Afrodisiaco Natural<!--Elementos de lista con imágenes--> <img
+						src="images/LivilBettMan.png" />
+						<h3>Livilbett Man</h3> <!--Descripciones de items-->
+						<p>Vitaminico estimulante</p>
+						<p>Impotencia, falta de apetito sexual, agotamiento físico y
+							mental, depresión, eyaculación prematura y padecimientos de la
+							próstata.</p>
+
+				</a></li>
+				<!-- /Productos Por A -->
+				<!-- Productos Por B -->
+				<li data-role="list-divider" data-theme="a">B<span
+					class="ui-li-count">2</span>
+				</li>
+				<li><img src="images/bebida2.png" class="ui-li-icon">Bebidas</a></li>
+				<li><a href="productos/concetrado2.html">Concentrado<!--Elementos de lista con imágenes-->
+						<img src="images/maca-concentrado.png" align="center" />
+						<h3>Maca con Camu Camu</h3> <!--Descripciones de items-->
+						<p>Concentrado vitaminico Reconstituyente a nivel físico,
+							mental y sexual:Ayuda a elevar la energía del
+							organismo.Contribuye a mejorar la fertilidad. Apoya a aumentar y
+							mejorar la calidad de la leche materna.</p>
+
+				</a></li>
+				<li><a href="productos/concetrado.html">Concentrado<!--Elementos de lista con imágenes-->
+						<img src="images/sabila-concentrado.png" />
+						<h3>Sabila con Camu Camu</h3> <!--Descripciones de items-->
+						<p>Aloe vera, funciona principalmente como regenerador de la
+							piel y de mucosas, Aporta a mejorar el aspecto de la piel,
+							fortaleciendo sus anexos (uñas y cabellos).Contribuye a la
+							protección de las mucosas del cuerpo, como la gástrica y la
+							bronquial..</p>
+				</a></li>
+				<!-- /Productos Por B -->
+
+				<!-- Productos Por S -->
+				<li data-role="list-divider" data-theme="a">S<span
+					class="ui-li-count">1</span>
+				</li>
+				<li><img src="images/gotas.png" class="ui-li-icon">Suplementos</a></li>
+				<li><a href="productos/suplemento.html">Suplemento
+						Alimenticio<!--Elementos de lista con imágenes--> <img
+						src="images/renal4.png" />
+						<h3>Renal4</h3> <!--Descripciones de items-->
+						<p>Suplemento Alimenticio, Enfermedad renal diabéticos o no
+							diabéticos. Pacientes con Insuficiencia renal sometidos a
+							hemodiálisis o diálisis peritoneal ambulatoria continua.
+							Pacientes con insuficiencia cardíaca congestiva, edema pulmonar,
+							o ambos provocado por la retención de sal y agua secundario al
+							estado urémico y que por su condición requieran además de una
+							restricción de líquidos y/o electrolitos someterse a un proceso
+							de diálisis. Pacientes con anorexia causada por el estado
+							urémico.</p>
+				</a></li>
+				<!-- /Productos Por S -->
+
+
+				<!-- Productos Por T -->
+				<li data-role="list-divider" data-theme="a">T<span
+					class="ui-li-count">2</span></li>
+				<li>
+					<!--Elementos de lista con iconos--> <img src="images/infusion.png"
+					class="ui-li-icon"> Te </a>
+				</li>
+				<li><a href="productos/teatzin.html"> Te herbal<!--Elementos de lista con imágenes-->
+						<img src="images/teherbal.png" />
+						<h3>Te Herbal ATZIN</h3> <!--Descripciones de items-->
+						<p>Medicina Azteca rinones y vias urinarias</p>
+						<p>Problemas del sistema Genitourinario esto incluye
+							riñones,vejiga,vias urinarias,PROSTATA. Enfermedades como:
+							piedras en los riñones,infecciones,inflamaciones ademas
+							desintoxica los riñones</p>
+				</a></li>
+				<li><a href="productos/teconcentrado.html"> Te herbal
+						Concentrado<!--Elementos de lista con imágenes--> <img
+						src="images/te_conc_base_hierbas.png" />
+						<h3>Herbal Tea Concentrate</h3> <!--Descripciones de items-->
+						<p>Te concentrado a base hierbas y frutas El Té Herbal
+							Concentrado contiene cafeína que estimula su metabolismo y provee
+							sensación de energía. Este té refrescante, de bajas calorías,
+							está disponible en una variedad de sabores Estimula la actividad
+							termogénica (metabolismo) Incrementa la sensación de energía.
+							Proporciona apoyo antioxidante. Delicioso, instantáneo y bajo en
+							calorías.</p>
+
+						<p>Distrubuidor Autorizado</p>
+				</a></li>
+
+
+				<!-- /Productos Por T -->
+				<!-- Productos Por V -->
+				<li data-role="list-divider" data-theme="a">V <span
+					class="ui-li-count">1</span>
+				</li>
+				<li><img src="images/jugo.png" class="ui-li-icon">Vitaminas</a></li>
+				<li><a href="productos/vitamina.html"> Vitamina<!--Elementos de lista con imágenes-->
+						<img src="images/VITAMINAE400.png" />
+						<h3>Vitamin E 400 IU</h3> <!--Descripciones de items-->
+						<p>Suplemento Dietario, Antioxidante para el mantenimiento de
+							la buena salud, Funciones La vitamina E es un potente destructor
+							de radicales libres, es un antioxidante que previene la
+							propagación del daño de los radicales libres en las membranas
+							biológicas, sobre todo, protege los ácidos grasos poliinsaturados
+							(AGPI) en fosfolípidos de membrana y en las lipoproteínas
+							plasmáticas.La función inmunológica, en la reparación del ADN, y
+							otros procesos metabólicos</p></a></li>
+				<!-- /Productos Por V -->
+			</ul>
+
+
+			<img src="images/portada.png" />
+
+		</div>
+		<div data-role="footer" align="center">Calidad de Vida</div>
+	</div>
+
+	<!-- /GALERIA -->
+
+	<!-- NOTICIAS -->
+	<div data-role="page" id="comprar" data-title="Noticias">
+		<div data-role="header">
+			<h1>Noticias</h1>
+			<a href="#portada" data-role="button" data-icon="home"
+				data-iconpos="notext" data-theme="b" data-iconpos="left"
+				data-inline="true">Inicio</a> </a>
+		</div>
+		<div data-role="content">
+			<h1>Tés e infusiones: su uso en la medicina alternativa</h1>
+			<img src="images/noti1.png" align="center" />
+			<p>Las infusiones o tés nos brindan una gran variedad de
+				beneficios a la salud gracias a sus propiedades naturales. Desde
+				tiempos inmemoriales se usa para aliviar malestares físicos e
+				inclusive emocionales, y es que ofrecen desde antioxidantes hasta un
+				bienestar relajante, lo que es una buena opción para antes de
+				dormir.</p>
+			<p>El té o infusión, no sólo son de hierbas sino también de
+				frutas. Hay combinaciones como té de canela con manzana, manzanilla
+				con anís o fresa y kiwi etc. Como sea, nos otorgan nutrimentos
+				buenos para la salud. Una de las interrogantes que saltan a relucir
+				es, ¿qué es mejor, tomar té natural o en bolsitas? La respuesta es
+				positiva, ambas son buenas ya que son una fuente natural rica en
+				nutrimentos y minerales aunque, por supuesto, la de bolsitas viene
+				procesada por fabricación. ¡Tú elijes!</p>
+			<p>
+			<h1>Médicos promueven visión integradora para el sistema de
+				salud tradicional</h1>
+			<img src="images/noti2.png" allign="center" />
+			<p>Doctores de hospitales públicos y gestores de medicina
+				alternativa apuestan por una mirada integradora del sistema de salud
+				tradicional que incorpore la cercanía, participación y humanización
+				en los tratamientos de las enfermedades de los pacientes, en
+				especial, malestares crónicos. inShare Imprimir Claves:
+				humanización, medicina natural, tratamientos alternativos Es sabido
+				que la salud pública tiene deficiencias estructurales,
+				presupuestarias y de calidad de profesional. No obstante, médicos
+				también advierten que hace falta una visión integradora en el
+				sistema de salud donde se sume la medicina natural y alternativa. </p>
+			<p>El
+				doctor Jorge Lastra Torres, director del Hospital Luis Calvo
+				Mackenna, expuso sobre los avances en políticas públicas para la
+				inclusión de las medicinas complementarias en el sistema de salud
+				oficial y destacó la incorporación de la acupuntura, homeopatía y
+				naturopatía, igual que el estudio de la pertinencia de reconocer, o
+				no, a las terapias florales y a la mesoterapia. Igualmente, el
+				profesional opinó que si las ventajas de las medicinas integrativas
+				se añaden a los retos de la autoridad, cuya responsabilidad, a su
+				juicio, no es sobre los pacientes sino que sobre la salud de la
+				población, se puede hacer un aporte significativo. “Hoy día tenemos
+				cada vez más claro que el proceso de sanación es un proceso social.
+				Los procesos sociales no son individuales, se construyen en la
+				conversación, en el discurso, en la cercanía. </p>
+			<p>Aquí hay un segundo
+				desafío y una ventaja de las medicinas integrativas porque nos hacen
+				la pregunta respecto del sentido y el modelo de aproximación nos
+				ayuda a construir sentido de lo que nos pasa y finalmente, ahí hay
+				una clave que nos puede ayudar a generar respuestas mucho más
+				potentes a los desafíos que hoy tenemos” aseveró Lastra.</p>
+			<p>
+			<img src="images/noti2.1.png" allign="center"/>
+			
+				<a href="#portada" data-role="button" data-inline="false"
+					data-theme="b">Volver</a>
+			</p>
+		</div>
+		<div data-role="footer" align="center">Calidad de Vida</div>
+	</div>
+	<!-- /COMPRAR -->
+
+
+	<!-- CONTACTO-->
+	<div data-role="page" id="contactos" data-title="Contactenos">
+		<div data-role="header">
+			<h1>Contactos</h1>
+			<a href="#portada" data-role="button" data-icon="reload"
+				data-iconpos="notext" data-theme="b" data-iconpos="left"
+				data-inline="true"></a>
+		</div>
+		<div data-role="content">
+			<img src="images/4.png"></img>
+			<!-- inicio formulario -->
+			<form id="c_form" name="contact">
+				<div>
+					<label>
+						<p>Nombre</p> <input name="nombre" id="c_name" type="text"
+						class="c_input" placeholder="nombre..." />
+					</label> <br /> <label>
+						<p>Email:</p> <input name="email" id="c_mail" type="text"
+						class="c_input" placeholder="email..." />
+					</label>
+				</div>
+				<label>
+					<p>Mensaje:</p> <textarea name="mensaje" id="c_msg"
+						placeholder="mensaje..."></textarea>
+				</label>
+				<!-- boton enviar  -->
+				<div id="c_btns">
+					<input name="send" onclick="cargaSendMail()" type="button"
+						value="Enviar" class="btn-b" id="c_enviar"></input>
+				</div>
+			</form>
+			<!-- fin formulario -->
+
+
+
+
+		</div>
+		<div data-role="footer" align="center">Calidad de Vida</div>
+	</div>
+	<!-- /CONTACTO -->
+</body>
+<
+
+</html>
