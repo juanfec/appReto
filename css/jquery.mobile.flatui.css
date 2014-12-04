@@ -12,7 +12,11 @@
 img{
 max-width:100%;
 }
-
+#foo .slideme (){
+	width: 100%;
+	
+	
+}
 .rslides {
   position: relative;
   list-style: none;
@@ -63,7 +67,7 @@ max-width:100%;
 /*     z-index: 22; */
 /* } */
 
-/* /**** general text styling ****/ 
+/* /**** general text styling ****/ */
 /* #wrapper h1{ */
 /*     font-size: 24px; */
 /*     color: rgb(6, 106, 117); */
@@ -74,7 +78,7 @@ max-width:100%;
 /*     padding-bottom: 30px; */
 /* } */
  
-/* /** For the moment only webkit supports the background-clip:text; */
+/* /** For the moment only webkit supports the background-clip:text; */ */
 /* #wrapper h1{ */
 /*     background:  */
 /*     -webkit-repeating-linear-gradient(-45deg,  */
@@ -189,7 +193,7 @@ max-width:100%;
 /*     margin: 5px 0; */
 /* } */
 
-/* /* styling the checkbox "keep me logged in"*/ 
+/* /* styling the checkbox "keep me logged in"*/ */
 /* .keeplogin{ */
 /*     margin-top: -5px; */
 /* } */
